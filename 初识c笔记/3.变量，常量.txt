@@ -1,0 +1,92 @@
+生活中的一些数据；
+有些数据不能变：血型，性别，圆周率
+有些数据一定可变：工资，年龄，体重
+
+
+C语言这么描述：                                               变量的分类：
+常量 - 不能改变的量                                          局部变量
+变量 - 能被改变的量                                          全局变量
+全局变量是具有外部链接属性的
+编译 + 链接 --> 可执行程序
+
+
+
+
+#include <stdio.h>
+int main()
+{
+	//创建一个变量
+	//类型   变量的名字 = 0；//推荐
+	//类型   变量的名字；//不推荐
+
+	int age = 16;
+	double weight = 75.23;
+
+	age = age+1;
+	weight = weight - 10;
+	printf("%d\n", age);
+	printf("%f\n", weight);
+
+	return 0;
+}
+
+
+%d - 整形
+%f - float
+%lf - double
+
+
+#include <stdio.h>
+
+//全局变量 - {}外部定义的
+int a = 100;
+
+int main()
+{
+	//局部变量 - {}内部定义的
+	//当局部变量和全局变量名字冲突的情况下，局部优先
+	//不建议把全局变量和局部变量的名字写成一样的
+	//
+	int a = 10;
+
+	printf("%d\n", a);
+
+	return 0;
+}
+
+写一个代码求2个整数的和
+scanf函数是输入函数
+
+#include <stdio.h>                                                              这样会报错
+int main()                                                                               解决方法：在代码第一行加  #define _CRT_SECURE_NO_WARNINGS 1
+{
+	int a = 0;
+	int b = 0;
+	int sum = 0;                                                                   svanf_s函数 - VS编译提供的，不是C语言标准规定的（不推荐用）
+	scanf("%d %d", &a, &b);
+	sum = a + b;
+	printf("sum = %d\n", sum);
+
+	return 0;
+}
+
+
+变量的命名：
+1.有意义
+int age;
+float salary;
+
+2名字必须是字母、数字、下划线组成，不能有特殊字符，同时不能以数字开头。
+
+int 2b;//错误的
+int _2b;//可以
+
+3.变量名不能是关键字
+
+
+
+
+
+
+
+vs2022初始预处理器：_DEBUG;_CONSOLE;%(PreprocessorDefinitions)

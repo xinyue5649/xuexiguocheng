@@ -1,0 +1,66 @@
+C语言中的常量分为以下几种：
+1.字面常量
+2.const 修饰的常量
+3.#define 定义的标识常量
+4.枚举常量
+
+
+
+//常量
+//
+#define MAX 10000//也可以在大括号内定义
+
+#include <stdio.h>
+int main()
+{
+	1.字面常量
+	3.14;
+	10;
+	'a';
+	'abcd';
+
+	2.const修饰的常变量
+	const int num = 10;//num本质上是变量被 const修饰后变成了常变量 - 具有常属性的变量（不能被改变的属性）
+	num = 20;
+	printf("num = %d\n", num);
+
+	int arr[10] = {0};//10个元素
+	arr是数组
+	const int n = 10;//创建数组要常量
+	int arr2[n];//n是变量，这里是不行的
+	
+	3.#define 定义的标识常量
+	MAX = 20000;//不能这么改因为它是常量
+	int n = MAX;
+	printf("n = %d\n", n);
+	
+	return 0;
+}
+
+
+
+#include <stdio.h>
+//性别
+enum sex  //enum枚举关键字
+{
+	//这种枚举类型的变量的未来可能取值
+	//枚举常量
+	MALE = 3,//赋初值
+	FEMALE,
+	SECRET
+};
+
+
+int main()
+{
+	//4.枚举常量
+	//可以一一列举的常量
+
+	enum sex s = MALE;
+	//MALE = 3;//不能这么该
+	printf("%d\n", MALE);
+	printf("%d\n", FEMALE);
+	printf("%d\n", SECRET);
+
+	return 0;
+}

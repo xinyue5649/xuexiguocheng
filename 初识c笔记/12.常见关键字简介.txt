@@ -1,0 +1,61 @@
+常见关键字 - C语言本身内置的，关键字不是自己创建的，也不能自己创建
+auto    break    case    char    const    continue    default     do    double    else    Enum
+extern    float    for    goto    if    int    long    register    return    short    signed
+sizeof    static    struct    switch    typedef    union    unsigned    void    volatile    while
+
+
+break  ， continue  一般在for   while   do while
+
+
+
+if else
+
+switch 
+case
+defluat
+
+ continue是用来结束本次循环的，而switch不是循环，因此其中不能使用continue关键字。
+
+goto
+
+
+
+const 常属性
+
+
+
+extern - 声明外部符号的
+
+
+register - 寄存器
+static - 静态的
+
+
+return - 函数返回值
+
+
+char
+short
+int
+long
+float
+double
+
+signed - 有符号的
+unsigned - 无符号的
+
+enum - 枚举
+struct - 结构体
+union - 联合体（共用体）
+
+void 无（一般用在   函数的返回类型，函数参数）
+
+
+sizeof - 计算大小的
+
+
+typedef - 类型重命名
+
+
+define 不是关键字，是预处理指令
+

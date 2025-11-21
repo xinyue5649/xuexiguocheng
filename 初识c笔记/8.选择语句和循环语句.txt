@@ -1,0 +1,60 @@
+C语言实现选择：
+if else
+
+switch
+
+ 。。。
+
+
+选择语句
+#include <stdio.h>
+
+int main()
+{
+
+	int input = 0;
+	printf("打开b站\n");
+	printf("听术力口？（0/1）");
+	scanf("%d", &input);
+
+	if (input == 1)
+	{
+		printf("听\n");
+	}
+	else
+	{
+		printf("不听\n");
+	}
+
+	return 0;
+}
+
+
+
+循环语句
+//20000行有效代码的积累
+
+while循环
+int main()
+{
+
+	int line = 0;
+	printf("练习\n");
+
+	while (line < 20000)
+	{
+		printf("写代码;%d\n",line);
+		line++;
+	}
+	if (line = 20000)
+	{
+		printf("厉害\n");
+	}
+
+	return 0;
+}
+
+
+
+for循环
+do ... while循环
