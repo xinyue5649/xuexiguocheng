@@ -1,0 +1,6 @@
+﻿  源.c
+D:\code\2025\操作符练习\源.c(120,7): warning C4013: “islower”未定义；假设外部返回 int
+D:\code\2025\操作符练习\源.c(121,19): warning C4013: “toupper”未定义；假设外部返回 int
+D:\code\2025\操作符练习\源.c(122,7): warning C4013: “isupper”未定义；假设外部返回 int
+D:\code\2025\操作符练习\源.c(123,19): warning C4013: “tolower”未定义；假设外部返回 int
+  操作符练习.vcxproj -> D:\code\2025\操作符练习\x64\Debug\操作符练习.exe
